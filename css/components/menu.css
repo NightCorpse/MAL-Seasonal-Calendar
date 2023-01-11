@@ -1,0 +1,38 @@
+#logo{
+    color: #1c439b;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+header{
+    display: block;
+    flex-direction: column;
+
+}
+
+
+#menu{
+    background-color: rgb(37, 65, 130);
+}
+
+#menu .year{
+    display: inline-flex;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    
+}
+
+#top-search{
+    float: right;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

@@ -1,0 +1,176 @@
+.animeCard{
+    border: 1px solid #f0f0f0;
+    width: 336px;
+    margin: 0 0 20px;
+    
+}
+
+.animeCard img{
+    display: inline;
+    width: 167px;
+    height: 236px;
+
+}
+
+.animeCard .info span:before{
+    content: attr(data-before);
+    font-weight: bold;
+    color: black;
+
+}
+
+.title{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.title h2{
+    display: -webkit-box;
+    color: #1c439b;
+    font-size: 14px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    
+}
+
+.title h2:hover{
+    text-decoration: underline;
+
+}
+
+.start_date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    background-color: #f8f8f8;
+    font-size: 11px;
+    color: gray;
+
+}
+
+.start_date span:first-child{ 
+
+    padding-right: 5px;
+    border-right: 1px solid #d8d8d8;
+
+}
+
+.start_date span:nth-child(2){ 
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid #d8d8d8;
+
+}
+
+.start_date span:nth-child(3){ 
+    padding-left: 5px;
+
+}
+
+.genres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    height: 25px;
+    font-size: 9px;
+
+}
+
+.genres span{
+    background-color: white;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    color: #787878;
+    white-space: nowrap; 
+    overflow:hidden;
+
+}
+
+.wrapper{
+    display: flex;
+
+}
+
+.info{
+    min-height: 0;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    font-size: 11px;
+    text-align: left;
+    overflow: hidden;
+    
+}
+
+.info p{
+    max-height: 180px;
+    overflow: hidden;
+    white-space: pre-line;
+
+}
+
+.info p:hover{
+    overflow: auto;
+    
+}
+
+.info i{
+    font-size: 16px;
+
+}
+
+.info .studio{
+    width: 100%;
+    padding: 3px 0 3px 0;
+    background-color: #f8f8f8;
+    
+}
+
+.info span:last-child{
+    padding: 3px 0 3px 0;
+    width: 100%;
+
+}
+
+.score{
+    display: flex;
+    justify-content: space-evenly;
+    height: 25px;
+    background-color: #f8f8f8;
+    font-size: 12px;
+    font-weight: bold;
+    align-items: center;
+    color: #545454;
+    border-top: 1px solid #f0f0f0;
+
+}
+
+.addList{
+    background-color: #4f74c8;
+    color:white;
+    border: none;
+    font-size: 12px;
+    width: 96px;
+    height: 22px;
+    border-radius: 2px;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+
+}
+
+.addList:hover{
+    background-color: #3f5fa8;
+
+}
