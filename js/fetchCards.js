@@ -199,6 +199,7 @@ function scrollBottom(id) {
 
     if ((synopsis.scrollTop() + synopsis.innerHeight()) >= synopsis[0].scrollHeight) {
         arrow.attr('class', 'fa-solid fa-angle-up');
+    } else if (arrow.attr("class") == "fa-solid fa-angle-down"){
     } else {
         arrow.attr('class', 'fa-solid fa-angle-down');
     }
