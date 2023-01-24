@@ -17,19 +17,17 @@
     <script src="js/client_id.js"></script>
     <script src="js/request.js"></script>
     <script src="js/filterData.js"></script>
+    <script src="js/fetchTabs.js"></script>
     <script src="js/fetchCards.js"></script>
     <script src="js/translateSynopsis_ptbr.js"></script>
-
 </head>
 
-<body>
+<body onload="fetchTabs()">
     <h1 id="logo">MALCalendar</h1>
     <div id="container">
         <header>
             <nav id="menu">
-                <a class="year" href=""> 2021</a>
-                <a class="year" href=""> 2022</a>
-                <a class="year" href=""> 2023</a>
+                <a class="actualYear" href="javascript:getQuery()"></a>
                 <div id="top-search">
                     <form>
                         <input type="text" type="text" name="txtsearch" placeholder="Search Anime...">
@@ -40,7 +38,6 @@
         </header>
 
         <section>
-            <button onclick="getQuery()">Test</button>
             <div class="content">
             </div>
         </section>
