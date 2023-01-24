@@ -93,6 +93,7 @@ filteredData.forEach(element => {
     } else {
         synopsis.innerHTML = element.node.synopsis;
         synopsis.setAttribute('lang', "en");
+        synopsis.setAttribute('onscroll', "scrollBottom("+element.node.id+")");
 
         // TROCAR BUTAUM POR IMAGEM
 /*        buttonTranslate = document.createElement("button");
@@ -187,6 +188,20 @@ function synopsisSize(id){
         synopsisText.after(oversizeArrow);
     }
 
+
+
+}
+
+function scrollBottom(id) {
+
+    synopsis = $('#' + id + ' .synopsisText');
+    arrow = $("#" + id + " .info i");
+
+    if ((synopsis.scrollTop() + synopsis.innerHeight()) >= synopsis[0].scrollHeight) {
+        arrow.attr('class', 'fa-solid fa-angle-up');
+    } else {
+        arrow.attr('class', 'fa-solid fa-angle-down');
+    }
 
 
 }
