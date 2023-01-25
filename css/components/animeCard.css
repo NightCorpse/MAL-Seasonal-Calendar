@@ -5,6 +5,12 @@
     
 }
 
+.animeCard p:before{
+    content: attr(data-before);
+    font-weight: bold;
+    color: black;
+}
+
 .animeCard img{
     display: inline;
     width: 167px;
@@ -124,6 +130,19 @@
     overflow: auto;
     
 }
+
+.info p::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .info p::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+  }
+  
+  .info p::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 .info i{
     font-size: 16px;

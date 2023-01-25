@@ -1,5 +1,0 @@
-.animeCard p:before{
-    content: attr(data-before);
-    font-weight: bold;
-    color: black;
-}
