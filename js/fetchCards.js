@@ -86,6 +86,8 @@ filteredData.forEach(element => {
     divInfo = document.createElement("div");
     divInfo.setAttribute("class", "info");
 
+    divWrap = document.createElement("div")
+
     synopsis = document.createElement("p");
     synopsis.setAttribute('class', 'synopsisText');
     if (element.node.synopsis == null || element.node.synopsis == "") {
@@ -136,7 +138,8 @@ filteredData.forEach(element => {
     source.innerHTML = ((element.node.source).charAt(0).toUpperCase() + element.node.source.slice(1)).replaceAll("_", " ");
     source.setAttribute('data-before', 'Source: ');
 
-    divInfo.append(synopsis, studioList, source);
+    divWrap.append(studioList, source);
+    divInfo.append(synopsis, divWrap);
     divWrapper.append(img ,divInfo);
     
     divScore = document.createElement("div");
@@ -169,7 +172,7 @@ filteredData.forEach(element => {
     div.append(divTitle, divStart_Date, divGenres, divWrapper/*, buttonTranslate*/, divScore);
     $( ".content" ).append( div );
     
-    if($("#" + element.node.id + " .synopsisText i").length == 0){
+    if($("#" + element.node.id + " .info>i").length == 0){
     synopsisSize(element.node.id);
     }
 

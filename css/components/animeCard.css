@@ -107,11 +107,11 @@
 }
 
 .info{
-    min-height: 0;
 	flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     padding: 6px;
     font-size: 11px;
     text-align: left;
@@ -149,8 +149,16 @@
 
 }
 
+.info>div{
+
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    width: 100%
+
+}
+
 .info .studio{
-    width: 100%;
     padding: 3px 0 3px 0;
     background-color: #f8f8f8;
     
