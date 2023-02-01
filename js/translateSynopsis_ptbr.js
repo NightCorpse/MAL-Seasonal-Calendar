@@ -3,13 +3,8 @@
 
 function transl(id){
 
-<<<<<<< HEAD
   synopsisTag = $('#' + id +'>.synopsisText');
 
-=======
-  synopsisTag = $('#' + id +' .synopsisText');
-  
->>>>>>> 2e6d17520619535f551001c58843bb05d6a269bc
   if (synopsisTag.attr("lang") == "en"){
     var sourceText = synopsisTag.text();
 
