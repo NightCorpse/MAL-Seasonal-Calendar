@@ -18,7 +18,11 @@ header{
     background-color: rgb(37, 65, 130);
 }
 
+<<<<<<< HEAD
 #menu .year{
+=======
+#menu .actualYear{
+>>>>>>> 2e6d17520619535f551001c58843bb05d6a269bc
     display: inline-flex;
     color: white;
     font-size: 20px;

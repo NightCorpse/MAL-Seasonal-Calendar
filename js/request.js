@@ -14,7 +14,11 @@
                 method: 'GET',
                 dataType: 'json',
                 beforeSend: function (xhr) {
+<<<<<<< HEAD
                     xhr.setRequestHeader("X-MAL-CLIENT-ID", "6bdc9c2feb5484aa3a0fce8d64b1bd91");
+=======
+                    xhr.setRequestHeader("X-MAL-CLIENT-ID", client_id);
+>>>>>>> 2e6d17520619535f551001c58843bb05d6a269bc
 
                 }
             }).done(function (data) {

@@ -86,6 +86,11 @@ filteredData.forEach(element => {
     divInfo = document.createElement("div");
     divInfo.setAttribute("class", "info");
 
+<<<<<<< HEAD
+=======
+    divWrap = document.createElement("div")
+
+>>>>>>> 2e6d17520619535f551001c58843bb05d6a269bc
     synopsis = document.createElement("p");
     synopsis.setAttribute('class', 'synopsisText');
     if (element.node.synopsis == null || element.node.synopsis == "") {
@@ -93,6 +98,10 @@ filteredData.forEach(element => {
     } else {
         synopsis.innerHTML = element.node.synopsis;
         synopsis.setAttribute('lang', "en");
+<<<<<<< HEAD
+=======
+        synopsis.setAttribute('onscroll', "scrollBottom("+element.node.id+")");
+>>>>>>> 2e6d17520619535f551001c58843bb05d6a269bc
 
         // TROCAR BUTAUM POR IMAGEM
 /*        buttonTranslate = document.createElement("button");
@@ -135,7 +144,12 @@ filteredData.forEach(element => {
     source.innerHTML = ((element.node.source).charAt(0).toUpperCase() + element.node.source.slice(1)).replaceAll("_", " ");
     source.setAttribute('data-before', 'Source: ');
 
+<<<<<<< HEAD
     divInfo.append(synopsis, studioList, source);
+=======
+    divWrap.append(studioList, source);
+    divInfo.append(synopsis, divWrap);
+>>>>>>> 2e6d17520619535f551001c58843bb05d6a269bc
     divWrapper.append(img ,divInfo);
     
     divScore = document.createElement("div");
@@ -168,7 +182,11 @@ filteredData.forEach(element => {
     div.append(divTitle, divStart_Date, divGenres, divWrapper/*, buttonTranslate*/, divScore);
     $( ".content" ).append( div );
     
+<<<<<<< HEAD
     if($("#" + element.node.id + " .synopsisText i").length == 0){
+=======
+    if($("#" + element.node.id + " .info>i").length == 0){
+>>>>>>> 2e6d17520619535f551001c58843bb05d6a269bc
     synopsisSize(element.node.id);
     }
 
@@ -190,4 +208,22 @@ function synopsisSize(id){
 
 
 }
+<<<<<<< HEAD
+=======
+
+function scrollBottom(id) {
+
+    synopsis = $('#' + id + ' .synopsisText');
+    arrow = $("#" + id + " .info i");
+
+    if ((synopsis.scrollTop() + synopsis.innerHeight()) >= synopsis[0].scrollHeight) {
+        arrow.attr('class', 'fa-solid fa-angle-up');
+    } else if (arrow.attr("class") == "fa-solid fa-angle-down"){
+    } else {
+        arrow.attr('class', 'fa-solid fa-angle-down');
+    }
+
+
+}
+>>>>>>> 2e6d17520619535f551001c58843bb05d6a269bc
  

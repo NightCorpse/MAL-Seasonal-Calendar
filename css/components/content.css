@@ -2,4 +2,9 @@
     display: grid;
     grid-template-columns: 200px 200px 200px;
     justify-content: space-around;
+<<<<<<< HEAD
+=======
+    justify-items: center;
+    padding-top: 20px;
+>>>>>>> 2e6d17520619535f551001c58843bb05d6a269bc
 }
